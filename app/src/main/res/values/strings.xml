@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Churrascometro</string>
+    <string name="adultos_que_bebem">adultos que bebem</string>
+    <string name="adultos_que_n_o_bebem">adultos que não bebem</string>
+    <string name="quantidade_de_criancas">Quantidade de crianças</string>
+    <string name="dura_o_do_churrasco_em_horas">Duração do churrasco em Horas</string>
+    <string name="kg_de_carne">Kg de carne</string>
+    <string name="latas_de_cerveja">Latas de Cerveja</string>
+    <string name="entrar">Entrar</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="ainda_n_o_tem_uma_conta_cadastre_se">Ainda não tem uma conta ? Cadastre-se</string>
+    <string name="_0">0</string>
+    <string name="ID_BANER">ca-app-pub-3940256099942544/6300978111</string>
+
+</resources>
