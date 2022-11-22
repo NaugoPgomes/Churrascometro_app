@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/icon_login"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/container"
+                style="@style/ContainerComponents"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logo"
+                />
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/Edit_Text"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:drawableEnd="@drawable/ic_email"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/container"
+                app:layout_constraintEnd_toEndOf="@+id/container"
+                app:layout_constraintTop_toTopOf="@+id/container"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/Edit_Text"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:drawableEnd="@drawable/ic_eye"
+                app:layout_constraintStart_toStartOf="@+id/container"
+                app:layout_constraintEnd_toEndOf="@+id/container"
+                app:layout_constraintTop_toBottomOf="@+id/email"
+                android:autofillHints="" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                style="@style/button"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="@string/entrar"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password"
+
+                />
+
+            <TextView
+                android:id="@+id/registrationScreenLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="40dp"
+                android:text="@string/ainda_n_o_tem_uma_conta_cadastre_se"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

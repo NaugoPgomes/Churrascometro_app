@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/background"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/registrationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cadastre-se"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:layout_marginTop="100dp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                />
+
+            <EditText
+
+                android:id="@+id/registrationEmail"
+                style="@style/Edit_Text"
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:drawableRight="@drawable/ic_email"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/registrationTitle"
+                />
+
+            <EditText
+
+                android:id="@+id/registrationPassword"
+                style="@style/Edit_Text"
+                android:hint="Senha"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="textPassword"
+                android:drawableRight="@drawable/ic_eye"
+                android:layout_below="@+id/registrationEmail"
+                />
+
+            <EditText
+
+                android:id="@+id/confirmRegistrationPassword"
+                style="@style/Edit_Text"
+                android:hint="Confirmar Senha"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="textPassword"
+                android:drawableRight="@drawable/ic_eye"
+                android:layout_below="@+id/registrationPassword"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonRegister"
+                style="@style/buttonRegister"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="Cadastrar"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/confirmRegistrationPassword"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

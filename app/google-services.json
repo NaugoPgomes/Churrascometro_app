@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "552090283505",
+    "project_id": "churrascometro-2fd19",
+    "storage_bucket": "churrascometro-2fd19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552090283505:android:ffd998169d884e14236850",
+        "android_client_info": {
+          "package_name": "com.example.churrascometro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552090283505-2iasql5vg7t18v3jqus4t3cp9fv0c70q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT3wTEqEXrbyWEgueLrBLAZIM2tItNDCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552090283505-2iasql5vg7t18v3jqus4t3cp9fv0c70q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

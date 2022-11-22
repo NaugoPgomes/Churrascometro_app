@@ -3,8 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/projetos/Churrascometro/app/src/main/res/drawable-v24/background.xml" value="0.1" />
+        <entry key="..\:/projetos/Churrascometro/app/src/main/res/drawable-v24/button.xml" value="0.124" />
+        <entry key="..\:/projetos/Churrascometro/app/src/main/res/drawable-v24/container_components.xml" value="0.1" />
+        <entry key="..\:/projetos/Churrascometro/app/src/main/res/drawable-v24/edit.xml" value="0.1" />
+        <entry key="..\:/projetos/Churrascometro/app/src/main/res/drawable-v24/ic_email.xml" value="0.1" />
         <entry key="..\:/projetos/Churrascometro/app/src/main/res/drawable/ic_signout.xml" value="0.164" />
+        <entry key="..\:/projetos/Churrascometro/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/projetos/Churrascometro/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/projetos/Churrascometro/app/src/main/res/layout/activity_register.xml" value="0.1" />
       </map>
     </option>
   </component>

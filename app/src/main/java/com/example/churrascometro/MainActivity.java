@@ -5,6 +5,7 @@ import static java.lang.Float.parseFloat;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,10 +14,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity
 {
+
+    FirebaseAuth user;
 
     private EditText adults;
     private EditText adultsWhoDoNotDrink;
@@ -33,6 +38,9 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
+
+        user = FirebaseAuth.getInstance();
 
         adults = findViewById(R.id.adults);
         adultsWhoDoNotDrink = findViewById(R.id.adultsWhoDoNotDrink);
@@ -48,6 +56,17 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 calculate();
+            }
+        });
+
+        signOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                user.signOut();
+                Intent intentE = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(intentE);
+                finish();
             }
         });
 
