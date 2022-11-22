@@ -103,6 +103,18 @@ public class MainActivity extends AppCompatActivity
                 Toast.makeText(this, "Informe valores validos", Toast.LENGTH_LONG).show();
             }
         }
+        else
+        {
+            if(time.getText().toString().equals("0"))
+            {
+                Toast.makeText(this, "O horario não pode ser 0", Toast.LENGTH_LONG).show();
+            }
+            else
+            {
+                Toast.makeText(this, "Nenhum campos pode estar vazio", Toast.LENGTH_LONG).show();
+            }
+
+        }
     }
 
     private int meat(double time)
@@ -143,7 +155,14 @@ public class MainActivity extends AppCompatActivity
 
     private Boolean validation()
     {
-        return (adults.getText().toString() != "" && adultsWhoDoNotDrink.getText().toString() != ""
-                && children.getText().toString() != "" && time.getText().toString() != "" && time.getText().toString() != "0");
+        if(adults.getText().toString().isEmpty() || adultsWhoDoNotDrink.getText().toString().isEmpty()
+                || children.getText().toString().isEmpty() || time.getText().toString().isEmpty() || time.getText().toString().equals("0"))
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 }
