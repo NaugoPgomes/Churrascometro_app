@@ -26,6 +26,7 @@ public class LoginActivity extends AppCompatActivity
     EditText password;
     AppCompatButton button;
     TextView registrationScreenLogin;
+    TextView forgotPasswordScreen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -42,6 +43,7 @@ public class LoginActivity extends AppCompatActivity
         password = findViewById(R.id.password);
         button = findViewById(R.id.button);
         registrationScreenLogin = findViewById(R.id.registrationScreenLogin);
+        forgotPasswordScreen = findViewById(R.id.forgotPasswordScreen);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +56,14 @@ public class LoginActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 Intent intentE = new Intent(getApplicationContext(), RegisterActivity.class);
+                startActivity(intentE);
+            }
+        });
+
+        forgotPasswordScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentE = new Intent(getApplicationContext(), Forgot_passwordActivity.class);
                 startActivity(intentE);
             }
         });
